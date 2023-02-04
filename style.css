@@ -66,7 +66,13 @@ body {
         justify-content: center;
     }
   }
-  
-  
+  .hero{
+    width: 500px;
+    height: 1000px;
+  }
+  .about-me{
+    height: 500px;
+    width: 500px;
+  }
 
 
