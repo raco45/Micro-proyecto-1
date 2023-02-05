@@ -30,3 +30,44 @@ document.addEventListener("DOMContentLoaded", () => {
     let caja=document.querySelector('.hero');
     slider(caja);
 } );
+
+
+function clean(){
+    document.getElementById("nombre").value="";
+    document.getElementById("mail").value="";
+    document.getElementById("mensaje").value="";
+};
+function formulario (){
+    var name = document.getElementById("nombre").value;
+    var correo = document.getElementById("mail").value;
+    var mensaje= document.getElementById("mensaje").value;
+    let aux= false;
+    if(name=="" || correo==""||mensaje==""){
+        alert("Elemento vacio");
+        clean();
+    }else{
+
+        if(notText(name.replace(" ","").toLowerCase())==false){
+            alert("Nombre invalido");
+            aux=false;
+        
+        }else{
+            aux=true;
+        }
+    }
+    if(aux==true){
+        alert("Nombre: "+ name+ "\nCorreo: "+correo+ "\n Mensaje: "+mensaje );
+        clean();
+    }else{
+
+    }
+};
+
+function notText(string){
+    var valoresAceptados = /^[a-z]+$/;
+       if (string.match(valoresAceptados)){
+            return true;
+       } else {
+             return false;
+      }
+};

@@ -232,6 +232,107 @@ text-align: justify;
     border-bottom: 2px solid aqua;
     border-radius: 10px;
 }
+.contact-me{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+.box-media{
+    
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+.box-media h2{
+    margin-bottom: 30px;
+    font-size: x-large;
+    color: aqua;
+}   
+
+.media-button{
+    
+    margin-bottom: 10px;
+}
+.media-button a{
+    font-size: larger;
+    border-bottom: 2px solid white;
+    padding: 1px;
+    border-radius: 15px;
+}
+.media-button a:hover{
+    background-color: aqua;
+}
+
+
+.box-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+
+    font-size:x-large;
+    margin-right: 40px;
+    
+    width: 75%;
+    color: aqua;
+    
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.form-left{
+    margin-top: 20px;
+    width: 100%;
+    
+}
+.form-right{
+    padding-top: 20px;
+    width: 100%;
+    
+}
+.example-group {
+    position:relative;
+    margin-top: 10px;
+  }
+
+  .example-input {
+    background-color: black;
+    border: 2px solid aqua ;
+    padding: 8px;
+    border-radius: 10px;
+    width: 250px;
+    height: 30px;
+    color: white;
+    
+  }
+  .text-area{
+    margin-top: 40px;
+    width: 300px;
+    height: 100px;
+  }
+  .form-buttom{
+    font-size: large;
+}
+
+  .input-label {
+    background-color: black;
+    color: aqua;
+    font-size: 15px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+  }
+  .area{
+    margin-top: 40px;
+  }
 @media screen and (max-width: 600px) {
     .box{
         display: grid;
@@ -253,6 +354,17 @@ text-align: justify;
     }
     .about-me{
         display:flex;
+        flex-direction: column;
+    }
+    .box-form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact-me{
+        display: flex;
+        justify-content: space-between;
         flex-direction: column;
     }
 
